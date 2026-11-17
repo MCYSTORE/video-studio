@@ -46,11 +46,6 @@ const SceneLayer: React.FC<{ scene: SceneConfig }> = ({ scene }) => {
     translateY = Math.cos(localFrame * 3.1) * 15 * decay;
   }
 
-  const flashOpacity =
-    scene.isPatternInterrupt && localFrame < 4
-      ? interpolate(localFrame, [0, 4], [0.45, 0])
-      : 0;
-
   return (
     <AbsoluteFill style={{ overflow: 'hidden', backgroundColor: '#000' }}>
       <Img
@@ -62,14 +57,6 @@ const SceneLayer: React.FC<{ scene: SceneConfig }> = ({ scene }) => {
           transform: `scale(${scale}) translate(${translateX}px, ${translateY}px)`,
         }}
       />
-      {flashOpacity > 0 && (
-        <AbsoluteFill
-          style={{
-            backgroundColor: '#FFFFFF',
-            opacity: flashOpacity,
-          }}
-        />
-      )}
     </AbsoluteFill>
   );
 };
@@ -77,15 +64,13 @@ const SceneLayer: React.FC<{ scene: SceneConfig }> = ({ scene }) => {
 const KineticCaptions: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const currentSec = frame / fps;
-
   const activeScene = SCENES.find(
-    (s) => currentSec >= s.startSec && currentSec < s.endSec
+    (s) => frame >= Math.round(s.startSec * fps) && frame < Math.round(s.endSec * fps)
   );
   if (!activeScene) return null;
 
   const activeCaption = activeScene.captions.find(
-    (c) => currentSec >= c.startSec && currentSec < c.endSec
+    (c) => frame >= Math.round(c.startSec * fps) && frame < Math.round(c.endSec * fps)
   );
   if (!activeCaption) return null;
 
@@ -116,13 +101,14 @@ const KineticCaptions: React.FC = () => {
     >
       <div
         style={{
-          fontFamily: 'Impact, "Arial Black", sans-serif',
-          fontSize: 68,
-          fontWeight: 900,
+          fontFamily: 'ShortCaptions, sans-serif',
+          fontSize: 64,
+          fontWeight: 800,
           lineHeight: 1.1,
           color: '#FFFFFF',
           textTransform: 'uppercase',
           WebkitTextStroke: '3px #000000',
+          paintOrder: 'stroke fill',
           textShadow: '0px 6px 14px rgba(0,0,0,0.85)',
         }}
       >
@@ -141,11 +127,23 @@ const KineticCaptions: React.FC = () => {
 };
 
 export const StickmanShort: React.FC = () => {
-  const { fps } = useVideoConfig();
+  const frame = useCurrentFrame();
+  const { fps, durationInFrames } = useVideoConfig();
+  const phase = frame % (6 * fps);
+  const flashOpacity = frame >= 6 * fps && phase < 4
+    ? interpolate(phase, [0, 4], [0.45, 0]) : 0;
+  // The final eight frames resolve to the exact opening image/framing.
+  const loopBlend = interpolate(frame, [durationInFrames - 8, durationInFrames - 1], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
+      <style>{`@font-face { font-family: ShortCaptions; src: url("${staticFile('fonts/OpenSans-ExtraBold.ttf')}"); font-weight: 800; }`}</style>
       <Audio src={staticFile('audio/voiceover.mp3')} volume={1.0} />
-      <Audio src={staticFile('audio/bgm.mp3')} volume={0.14} />
+      <Audio src={staticFile('audio/bgm.mp3')} volume={(f) =>
+        // Short edge fades prevent clicks at the loop; the bed stays at 0.14.
+        0.14 * Math.min(1, f / 3, Math.max(0, (durationInFrames - 1 - f) / 3))
+      } />
 
       {SCENES.map((scene) => (
         <React.Fragment key={scene.id}>
@@ -157,7 +155,10 @@ export const StickmanShort: React.FC = () => {
           )}
         </React.Fragment>
       ))}
-
+      {loopBlend > 0 && <AbsoluteFill style={{ overflow: 'hidden', opacity: loopBlend }}>
+        <Img src={staticFile(SCENES[0].image)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.02)' }} />
+      </AbsoluteFill>}
+      {flashOpacity > 0 && <AbsoluteFill style={{ backgroundColor: '#FFF', opacity: flashOpacity }} />}
       <KineticCaptions />
     </AbsoluteFill>
   );

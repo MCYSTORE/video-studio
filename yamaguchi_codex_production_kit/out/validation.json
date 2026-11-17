@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "video": "yamaguchi_short_final.mp4",
+  "sizeBytes": 47808236,
+  "sha256": "72691bc2fb34e97bb26b9514e1577717bce2c1d7e209f305e0795e8df27247da",
+  "videoDurationSec": 42.833333,
+  "containerDurationSec": 42.837,
+  "frames": 1285,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "sceneCount": 16,
+  "sourceImageHashes": "All 16 organized images match originals",
+  "timelineCheck": "Every frame has exactly one scene; all captions contained in their scene",
+  "fullDecode": "PASS (ffmpeg -xerror)",
+  "audioPeakDbFS": -3.3,
+  "audioMeanDbFS": -22.4,
+  "typecheck": "PASS (npx tsc --noEmit)",
+  "render": "PASS (npx remotion render StickmanShort out/yamaguchi_short_final.mp4)",
+  "timingPrecisionMs": 33.333333333333336
+}
