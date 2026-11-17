@@ -1,0 +1,28 @@
+Input #0, mp3, from 'public/sfx/sfx_ding.mp3':
+  Metadata:
+    encoder         : Lavf59.27.100
+  Duration: 00:00:01.92, start: 0.023021, bitrate: 194 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 48000 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc59.37
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7ff6c4002000] silence_start: 1.348271
+[silencedetect @ 0x7ff6c4002000] silence_end: 1.371625 | silence_duration: 0.0233542
+[silencedetect @ 0x7ff6c4002000] silence_start: 1.37275
+[silencedetect @ 0x7ff6c4002000] silence_end: 1.415188 | silence_duration: 0.0424375
+[silencedetect @ 0x7ff6c4002000] silence_start: 1.421458
+[silencedetect @ 0x7ff6c4002000] silence_end: 1.485646 | silence_duration: 0.0641875
+[silencedetect @ 0x7ff6c4002000] silence_start: 1.485667
+[silencedetect @ 0x7ff6c4002000] silence_end: 1.517583 | silence_duration: 0.0319167
+[silencedetect @ 0x7ff6c4002000] silence_start: 1.517604
+[silencedetect @ 0x7ff6c4002000] silence_end: 1.88 | silence_duration: 0.362396
+[out#0/null @ 0x563f0ceda280] video:0KiB audio:352KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:01.88 bitrate=N/A speed= 245x

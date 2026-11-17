@@ -1,0 +1,966 @@
+{
+  "fps": 30,
+  "sourceDurationSeconds": 38.922438,
+  "durationInFrames": 1168,
+  "quantizationErrorMilliseconds": 10.895,
+  "anticipationFrames": 3,
+  "patternInterruptFrames": [
+    177,
+    357,
+    537,
+    717,
+    897,
+    1077
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "phrase": "El hombre",
+      "description": "Cartel frente a la Torre Eiffel; apertura",
+      "anchorWordIndex": 0,
+      "wordStartSeconds": 0.5,
+      "startFrame": 0,
+      "endFrame": 77
+    },
+    {
+      "id": 2,
+      "phrase": "En 1925",
+      "description": "Lectura del periódico en el café",
+      "anchorWordIndex": 7,
+      "wordStartSeconds": 2.68,
+      "startFrame": 77,
+      "endFrame": 274
+    },
+    {
+      "id": 3,
+      "phrase": "idea absurda",
+      "description": "Bombilla sobre fondo dividido",
+      "anchorWordIndex": 23,
+      "wordStartSeconds": 9.22,
+      "startFrame": 274,
+      "endFrame": 318
+    },
+    {
+      "id": 4,
+      "phrase": "Falsificó cartas",
+      "description": "Sello de cera en cartas oficiales",
+      "anchorWordIndex": 25,
+      "wordStartSeconds": 10.7,
+      "startFrame": 318,
+      "endFrame": 383
+    },
+    {
+      "id": 5,
+      "phrase": "reunió",
+      "description": "Reunión con empresarios en el hotel",
+      "anchorWordIndex": 30,
+      "wordStartSeconds": 12.86,
+      "startFrame": 383,
+      "endFrame": 480
+    },
+    {
+      "id": 6,
+      "phrase": "Les dijo",
+      "description": "Presentación de los planos",
+      "anchorWordIndex": 40,
+      "wordStartSeconds": 16.1,
+      "startFrame": 480,
+      "endFrame": 595
+    },
+    {
+      "id": 7,
+      "phrase": "contrato secreto",
+      "description": "Manos frotándose frente a vigas",
+      "anchorWordIndex": 55,
+      "wordStartSeconds": 19.94,
+      "startFrame": 595,
+      "endFrame": 755
+    },
+    {
+      "id": 8,
+      "phrase": "le pagó",
+      "description": "Entrega de maletín lleno de billetes",
+      "anchorWordIndex": 71,
+      "wordStartSeconds": 25.28,
+      "startFrame": 755,
+      "endFrame": 811
+    },
+    {
+      "id": 9,
+      "phrase": "Lo más loco",
+      "description": "Salida en tren; puente visual después del pago",
+      "anchorWordIndex": 78,
+      "wordStartSeconds": 27.14,
+      "startFrame": 811,
+      "endFrame": 857
+    },
+    {
+      "id": 10,
+      "phrase": "víctima",
+      "description": "Vergüenza ante la Torre Eiffel intacta",
+      "anchorWordIndex": 82,
+      "wordStartSeconds": 28.68,
+      "startFrame": 857,
+      "endFrame": 965
+    },
+    {
+      "id": 11,
+      "phrase": "Así que Víctor",
+      "description": "Regreso a París en auto",
+      "anchorWordIndex": 92,
+      "wordStartSeconds": 32.26,
+      "startFrame": 965,
+      "endFrame": 1016
+    },
+    {
+      "id": 12,
+      "phrase": "vendió otra vez",
+      "description": "Dos maletines; segunda venta",
+      "anchorWordIndex": 100,
+      "wordStartSeconds": 33.98,
+      "startFrame": 1016,
+      "endFrame": 1061
+    },
+    {
+      "id": 13,
+      "phrase": "Comenta",
+      "description": "Primer plano con ceja levantada",
+      "anchorWordIndex": 103,
+      "wordStartSeconds": 35.48,
+      "startFrame": 1061,
+      "endFrame": 1093
+    },
+    {
+      "id": 14,
+      "phrase": "caído en ese",
+      "description": "Apunta a cámara; pregunta al espectador",
+      "anchorWordIndex": 107,
+      "wordStartSeconds": 36.52,
+      "startFrame": 1093,
+      "endFrame": 1127
+    },
+    {
+      "id": 15,
+      "phrase": "porque este hombre",
+      "description": "Atardecer sobre París; raccord con apertura",
+      "anchorWordIndex": 111,
+      "wordStartSeconds": 37.68,
+      "startFrame": 1127,
+      "endFrame": 1168
+    }
+  ],
+  "captions": [
+    {
+      "startFrame": 12,
+      "endFrame": 40,
+      "highlight": 3,
+      "words": [
+        {
+          "text": "¡El",
+          "startFrame": 12,
+          "endFrame": 20
+        },
+        {
+          "text": "hombre",
+          "startFrame": 20,
+          "endFrame": 27
+        },
+        {
+          "text": "que",
+          "startFrame": 27,
+          "endFrame": 32
+        },
+        {
+          "text": "vendió",
+          "startFrame": 32,
+          "endFrame": 40
+        }
+      ]
+    },
+    {
+      "startFrame": 40,
+      "endFrame": 77,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "la",
+          "startFrame": 40,
+          "endFrame": 44
+        },
+        {
+          "text": "Torre",
+          "startFrame": 44,
+          "endFrame": 51
+        },
+        {
+          "text": "Eiffel!",
+          "startFrame": 51,
+          "endFrame": 61
+        }
+      ]
+    },
+    {
+      "startFrame": 77,
+      "endFrame": 141,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "En",
+          "startFrame": 77,
+          "endFrame": 94
+        },
+        {
+          "text": "1925,",
+          "startFrame": 94,
+          "endFrame": 127
+        }
+      ]
+    },
+    {
+      "startFrame": 141,
+      "endFrame": 173,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "Víctor",
+          "startFrame": 141,
+          "endFrame": 146
+        },
+        {
+          "text": "Lustig",
+          "startFrame": 146,
+          "endFrame": 161
+        },
+        {
+          "text": "leyó",
+          "startFrame": 161,
+          "endFrame": 169
+        },
+        {
+          "text": "que",
+          "startFrame": 169,
+          "endFrame": 173
+        }
+      ]
+    },
+    {
+      "startFrame": 173,
+      "endFrame": 209,
+      "highlight": 3,
+      "words": [
+        {
+          "text": "reparar",
+          "startFrame": 173,
+          "endFrame": 185
+        },
+        {
+          "text": "la",
+          "startFrame": 185,
+          "endFrame": 188
+        },
+        {
+          "text": "Torre",
+          "startFrame": 188,
+          "endFrame": 198
+        },
+        {
+          "text": "costaba",
+          "startFrame": 198,
+          "endFrame": 209
+        }
+      ]
+    },
+    {
+      "startFrame": 209,
+      "endFrame": 242,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "una",
+          "startFrame": 209,
+          "endFrame": 217
+        },
+        {
+          "text": "fortuna.",
+          "startFrame": 217,
+          "endFrame": 236
+        }
+      ]
+    },
+    {
+      "startFrame": 242,
+      "endFrame": 274,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "Así",
+          "startFrame": 242,
+          "endFrame": 255
+        },
+        {
+          "text": "que",
+          "startFrame": 255,
+          "endFrame": 260
+        },
+        {
+          "text": "tuvo",
+          "startFrame": 260,
+          "endFrame": 266
+        },
+        {
+          "text": "una",
+          "startFrame": 266,
+          "endFrame": 274
+        }
+      ]
+    },
+    {
+      "startFrame": 274,
+      "endFrame": 318,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "idea",
+          "startFrame": 274,
+          "endFrame": 283
+        },
+        {
+          "text": "absurda.",
+          "startFrame": 283,
+          "endFrame": 304
+        }
+      ]
+    },
+    {
+      "startFrame": 318,
+      "endFrame": 365,
+      "highlight": 0,
+      "words": [
+        {
+          "text": "Falsificó",
+          "startFrame": 318,
+          "endFrame": 335
+        },
+        {
+          "text": "cartas",
+          "startFrame": 335,
+          "endFrame": 347
+        },
+        {
+          "text": "del",
+          "startFrame": 347,
+          "endFrame": 352
+        },
+        {
+          "text": "gobierno",
+          "startFrame": 352,
+          "endFrame": 365
+        }
+      ]
+    },
+    {
+      "startFrame": 365,
+      "endFrame": 404,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "y",
+          "startFrame": 365,
+          "endFrame": 383
+        },
+        {
+          "text": "reunió",
+          "startFrame": 383,
+          "endFrame": 394
+        },
+        {
+          "text": "a",
+          "startFrame": 394,
+          "endFrame": 398
+        },
+        {
+          "text": "seis",
+          "startFrame": 398,
+          "endFrame": 404
+        }
+      ]
+    },
+    {
+      "startFrame": 404,
+      "endFrame": 448,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "empresarios",
+          "startFrame": 404,
+          "endFrame": 421
+        },
+        {
+          "text": "chatarreros",
+          "startFrame": 421,
+          "endFrame": 440
+        },
+        {
+          "text": "en",
+          "startFrame": 440,
+          "endFrame": 445
+        },
+        {
+          "text": "un",
+          "startFrame": 445,
+          "endFrame": 448
+        }
+      ]
+    },
+    {
+      "startFrame": 448,
+      "endFrame": 480,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "hotel",
+          "startFrame": 448,
+          "endFrame": 455
+        },
+        {
+          "text": "de",
+          "startFrame": 455,
+          "endFrame": 460
+        },
+        {
+          "text": "lujo.",
+          "startFrame": 460,
+          "endFrame": 472
+        }
+      ]
+    },
+    {
+      "startFrame": 480,
+      "endFrame": 500,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "Les",
+          "startFrame": 480,
+          "endFrame": 486
+        },
+        {
+          "text": "dijo",
+          "startFrame": 486,
+          "endFrame": 493
+        },
+        {
+          "text": "que",
+          "startFrame": 493,
+          "endFrame": 497
+        },
+        {
+          "text": "el",
+          "startFrame": 497,
+          "endFrame": 500
+        }
+      ]
+    },
+    {
+      "startFrame": 500,
+      "endFrame": 530,
+      "highlight": 0,
+      "words": [
+        {
+          "text": "gobierno",
+          "startFrame": 500,
+          "endFrame": 509
+        },
+        {
+          "text": "iba",
+          "startFrame": 509,
+          "endFrame": 517
+        },
+        {
+          "text": "a",
+          "startFrame": 517,
+          "endFrame": 526
+        },
+        {
+          "text": "demoler",
+          "startFrame": 526,
+          "endFrame": 530
+        }
+      ]
+    },
+    {
+      "startFrame": 530,
+      "endFrame": 577,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "la",
+          "startFrame": 530,
+          "endFrame": 535
+        },
+        {
+          "text": "Torre",
+          "startFrame": 535,
+          "endFrame": 547
+        },
+        {
+          "text": "y",
+          "startFrame": 547,
+          "endFrame": 572
+        },
+        {
+          "text": "que",
+          "startFrame": 572,
+          "endFrame": 577
+        }
+      ]
+    },
+    {
+      "startFrame": 577,
+      "endFrame": 607,
+      "highlight": 3,
+      "words": [
+        {
+          "text": "él",
+          "startFrame": 577,
+          "endFrame": 583
+        },
+        {
+          "text": "tenía",
+          "startFrame": 583,
+          "endFrame": 591
+        },
+        {
+          "text": "el",
+          "startFrame": 591,
+          "endFrame": 595
+        },
+        {
+          "text": "contrato",
+          "startFrame": 595,
+          "endFrame": 607
+        }
+      ]
+    },
+    {
+      "startFrame": 607,
+      "endFrame": 644,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "secreto",
+          "startFrame": 607,
+          "endFrame": 620
+        },
+        {
+          "text": "para",
+          "startFrame": 620,
+          "endFrame": 625
+        },
+        {
+          "text": "venderles",
+          "startFrame": 625,
+          "endFrame": 639
+        },
+        {
+          "text": "las",
+          "startFrame": 639,
+          "endFrame": 644
+        }
+      ]
+    },
+    {
+      "startFrame": 644,
+      "endFrame": 699,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "7.000",
+          "startFrame": 644,
+          "endFrame": 662
+        },
+        {
+          "text": "toneladas",
+          "startFrame": 662,
+          "endFrame": 676
+        },
+        {
+          "text": "de",
+          "startFrame": 676,
+          "endFrame": 681
+        },
+        {
+          "text": "hierro.",
+          "startFrame": 681,
+          "endFrame": 692
+        }
+      ]
+    },
+    {
+      "startFrame": 699,
+      "endFrame": 729,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "Un",
+          "startFrame": 699,
+          "endFrame": 704
+        },
+        {
+          "text": "empresario",
+          "startFrame": 704,
+          "endFrame": 718
+        },
+        {
+          "text": "cayó",
+          "startFrame": 718,
+          "endFrame": 727
+        },
+        {
+          "text": "en",
+          "startFrame": 727,
+          "endFrame": 729
+        }
+      ]
+    },
+    {
+      "startFrame": 729,
+      "endFrame": 758,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "la",
+          "startFrame": 729,
+          "endFrame": 732
+        },
+        {
+          "text": "trampa",
+          "startFrame": 732,
+          "endFrame": 743
+        },
+        {
+          "text": "y",
+          "startFrame": 743,
+          "endFrame": 755
+        },
+        {
+          "text": "le",
+          "startFrame": 755,
+          "endFrame": 758
+        }
+      ]
+    },
+    {
+      "startFrame": 758,
+      "endFrame": 795,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "pagó",
+          "startFrame": 758,
+          "endFrame": 766
+        },
+        {
+          "text": "una",
+          "startFrame": 766,
+          "endFrame": 770
+        },
+        {
+          "text": "maleta",
+          "startFrame": 770,
+          "endFrame": 781
+        },
+        {
+          "text": "llena",
+          "startFrame": 781,
+          "endFrame": 795
+        }
+      ]
+    },
+    {
+      "startFrame": 795,
+      "endFrame": 811,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "de",
+          "startFrame": 795,
+          "endFrame": 799
+        },
+        {
+          "text": "billetes.",
+          "startFrame": 799,
+          "endFrame": 811
+        }
+      ]
+    },
+    {
+      "startFrame": 811,
+      "endFrame": 854,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "Lo",
+          "startFrame": 811,
+          "endFrame": 827
+        },
+        {
+          "text": "más",
+          "startFrame": 827,
+          "endFrame": 835
+        },
+        {
+          "text": "loco,",
+          "startFrame": 835,
+          "endFrame": 845
+        }
+      ]
+    },
+    {
+      "startFrame": 854,
+      "endFrame": 886,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "la",
+          "startFrame": 854,
+          "endFrame": 857
+        },
+        {
+          "text": "víctima",
+          "startFrame": 857,
+          "endFrame": 868
+        },
+        {
+          "text": "tuvo",
+          "startFrame": 868,
+          "endFrame": 874
+        },
+        {
+          "text": "tanta",
+          "startFrame": 874,
+          "endFrame": 886
+        }
+      ]
+    },
+    {
+      "startFrame": 886,
+      "endFrame": 935,
+      "highlight": 0,
+      "words": [
+        {
+          "text": "vergüenza",
+          "startFrame": 886,
+          "endFrame": 904
+        },
+        {
+          "text": "que",
+          "startFrame": 904,
+          "endFrame": 915
+        },
+        {
+          "text": "jamás",
+          "startFrame": 915,
+          "endFrame": 931
+        },
+        {
+          "text": "fue",
+          "startFrame": 931,
+          "endFrame": 935
+        }
+      ]
+    },
+    {
+      "startFrame": 935,
+      "endFrame": 965,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "a",
+          "startFrame": 935,
+          "endFrame": 938
+        },
+        {
+          "text": "la",
+          "startFrame": 938,
+          "endFrame": 940
+        },
+        {
+          "text": "policía.",
+          "startFrame": 940,
+          "endFrame": 958
+        }
+      ]
+    },
+    {
+      "startFrame": 965,
+      "endFrame": 997,
+      "highlight": 3,
+      "words": [
+        {
+          "text": "Así",
+          "startFrame": 965,
+          "endFrame": 971
+        },
+        {
+          "text": "que",
+          "startFrame": 971,
+          "endFrame": 976
+        },
+        {
+          "text": "Víctor",
+          "startFrame": 976,
+          "endFrame": 982
+        },
+        {
+          "text": "volvió",
+          "startFrame": 982,
+          "endFrame": 997
+        }
+      ]
+    },
+    {
+      "startFrame": 997,
+      "endFrame": 1016,
+      "highlight": 1,
+      "words": [
+        {
+          "text": "a",
+          "startFrame": 997,
+          "endFrame": 998
+        },
+        {
+          "text": "París",
+          "startFrame": 998,
+          "endFrame": 1009
+        },
+        {
+          "text": "y",
+          "startFrame": 1009,
+          "endFrame": 1013
+        },
+        {
+          "text": "la",
+          "startFrame": 1013,
+          "endFrame": 1016
+        }
+      ]
+    },
+    {
+      "startFrame": 1016,
+      "endFrame": 1061,
+      "highlight": 0,
+      "words": [
+        {
+          "text": "vendió",
+          "startFrame": 1016,
+          "endFrame": 1027
+        },
+        {
+          "text": "otra",
+          "startFrame": 1027,
+          "endFrame": 1039
+        },
+        {
+          "text": "vez.",
+          "startFrame": 1039,
+          "endFrame": 1050
+        }
+      ]
+    },
+    {
+      "startFrame": 1061,
+      "endFrame": 1093,
+      "highlight": 3,
+      "words": [
+        {
+          "text": "Comenta",
+          "startFrame": 1061,
+          "endFrame": 1071
+        },
+        {
+          "text": "si",
+          "startFrame": 1071,
+          "endFrame": 1077
+        },
+        {
+          "text": "tú",
+          "startFrame": 1077,
+          "endFrame": 1082
+        },
+        {
+          "text": "habrías",
+          "startFrame": 1082,
+          "endFrame": 1093
+        }
+      ]
+    },
+    {
+      "startFrame": 1093,
+      "endFrame": 1127,
+      "highlight": 3,
+      "words": [
+        {
+          "text": "caído",
+          "startFrame": 1093,
+          "endFrame": 1102
+        },
+        {
+          "text": "en",
+          "startFrame": 1102,
+          "endFrame": 1105
+        },
+        {
+          "text": "ese",
+          "startFrame": 1105,
+          "endFrame": 1109
+        },
+        {
+          "text": "truco,",
+          "startFrame": 1109,
+          "endFrame": 1120
+        }
+      ]
+    },
+    {
+      "startFrame": 1127,
+      "endFrame": 1168,
+      "highlight": 2,
+      "words": [
+        {
+          "text": "porque",
+          "startFrame": 1127,
+          "endFrame": 1135
+        },
+        {
+          "text": "este",
+          "startFrame": 1135,
+          "endFrame": 1143
+        },
+        {
+          "text": "hombre…",
+          "startFrame": 1143,
+          "endFrame": 1163
+        }
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "file": "sfx/sfx_ding.mp3",
+      "frame": 274,
+      "volume": 0.45,
+      "phrase": "idea absurda",
+      "anchorWordIndex": 23,
+      "wordStartSeconds": 9.22
+    },
+    {
+      "file": "sfx/sfx_cash.mp3",
+      "frame": 1016,
+      "volume": 0.5,
+      "phrase": "vendio otra vez",
+      "anchorWordIndex": 100,
+      "wordStartSeconds": 33.98
+    }
+  ]
+}

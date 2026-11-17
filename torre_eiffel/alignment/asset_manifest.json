@@ -1,0 +1,123 @@
+{
+  "scenes": [
+    {
+      "scene": 1,
+      "source": "Stickman_placing_sign_by_Eiffel_28d26e43.jpg",
+      "destination": "public/scenes/01.jpg",
+      "sha256": "c8aab7c62e14f2779345cdf3338df77aa5653ec0c2fb4993e0db09e7c75d4f8a"
+    },
+    {
+      "scene": 2,
+      "source": "Stickman_reading_newspaper_at_cafe_8f3c81c0.jpg",
+      "destination": "public/scenes/02.jpg",
+      "sha256": "514ef12a8a7c87ca209f4de48961980ec3a51d9efc9a2d43c1e57f6487839e88"
+    },
+    {
+      "scene": 3,
+      "source": "Stickman_smiling_with_glowing_li…_2493f107.jpg",
+      "destination": "public/scenes/03.jpg",
+      "sha256": "d48fe87ad67f3b34e79b3558e66a46827cae21e32419d8557739b8b5fd65c7f4"
+    },
+    {
+      "scene": 4,
+      "source": "Stickman_stamping_wax_seal_6d1671c5.jpg",
+      "destination": "public/scenes/04.jpg",
+      "sha256": "518b753773897c1fb48d6ab38e02dc4a31d85d7f517ccded2af59260ca933ea3"
+    },
+    {
+      "scene": 5,
+      "source": "Stickman_addressing_businessmen_…_9b255f8e.jpg",
+      "destination": "public/scenes/05.jpg",
+      "sha256": "cbdc5126cbc97bc73066bd708916553bdcfa7fb751cb223804ed26040ede5117"
+    },
+    {
+      "scene": 6,
+      "source": "Stickman_pointing_at_blueprints_3d382d6e.jpg",
+      "destination": "public/scenes/06.jpg",
+      "sha256": "d9a1a74b70a630b11b4cec7f290f234bc5a857d52ca9ea0375f400b710a4c6ea"
+    },
+    {
+      "scene": 7,
+      "source": "Stickman_rubbing_hands_against_sky_3408e693.jpg",
+      "destination": "public/scenes/07.jpg",
+      "sha256": "ba70781c5f708ecade8cbb4d0215bb06194d4b976e4d77c460fca52b609e65ce"
+    },
+    {
+      "scene": 8,
+      "source": "Stickman_handing_briefcase_of_money_c54114ba.jpg",
+      "destination": "public/scenes/08.jpg",
+      "sha256": "900f7eed58ef06be9beac6ce3da9ed9bb1e1e8ffe888b018f6f316c5b74c4b7d"
+    },
+    {
+      "scene": 9,
+      "source": "Stickman_boarding_vintage_train_…_6b617f03.jpg",
+      "destination": "public/scenes/09.jpg",
+      "sha256": "0a03e6fcf3ce9f33265a689dfc9cdb293181bfe419198b59ca0677973b994c16"
+    },
+    {
+      "scene": 10,
+      "source": "Stickman_stares_at_Eiffel_Tower_f551fc6d.jpg",
+      "destination": "public/scenes/10.jpg",
+      "sha256": "8fb74842527ee5f7f07f8029e50c64fafbd3b947d15fe1dcc3c56a743f2308f4"
+    },
+    {
+      "scene": 11,
+      "source": "Stickman_driving_car_in_Paris_c88fe3bb.jpg",
+      "destination": "public/scenes/11.jpg",
+      "sha256": "e4103583991bbb3d5fa92c6e61112eafd62d3663bc3399d1ea6904ff065d8505"
+    },
+    {
+      "scene": 12,
+      "source": "Stickman_holding_cash_briefcases_b83d629b.jpg",
+      "destination": "public/scenes/12.jpg",
+      "sha256": "c9d2c8008d9b65e1bcfb5e2622b4b904469f0d9b35da308c42ee385934f67eb0"
+    },
+    {
+      "scene": 13,
+      "source": "Stickman_raising_eyebrow_portrait_0cd2c7ca.jpg",
+      "destination": "public/scenes/13.jpg",
+      "sha256": "bf1b3885fd992e20ee37435c214b148c62772f754044367e9bd4b48e736eb617"
+    },
+    {
+      "scene": 14,
+      "source": "Stickman_pointing_at_camera_52a5da04.jpg",
+      "destination": "public/scenes/14.jpg",
+      "sha256": "280538a81c14f3bf3e4aa2029db01d4faf4f0d9b4a3e67cc4e7ebe0a0c1195a2"
+    },
+    {
+      "scene": 15,
+      "source": "Stickman_standing_by_Eiffel_Tower_6234846d.jpg",
+      "destination": "public/scenes/15.jpg",
+      "sha256": "b8bcf8c6c086a542c7be0084b884f86a12c305a5eb4f41de51eadb2025db40b5"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "Stickman_standing_near_iron_tower_6e1ec46c.jpg",
+      "reason": "Alternate sunset closing; selected standing_by_Eiffel for wider Paris view."
+    }
+  ],
+  "character_sheet_found": false,
+  "audio": [
+    {
+      "source": "Voz-torre-1.mp3",
+      "destination": "public/audio/voiceover.mp3",
+      "sha256": "de8feb0ac8de44c67ebd4f4ae6307c46002305737d4e109c8dd6a8828c186b28"
+    },
+    {
+      "source": "Midnight_Capers.mp3",
+      "destination": "public/audio/bgm.mp3",
+      "sha256": "99459ca5aa19221634f264ec436846c161736e3a43462ff157dcd6163a22f684"
+    },
+    {
+      "source": "Bright_cartoon_light_#3-1794914490783.mp3",
+      "destination": "public/sfx/sfx_ding.mp3",
+      "sha256": "db661a5880c17492982a8dadb9186ec867f50d2381fc195508563b19aeb311cb"
+    },
+    {
+      "source": "Vintage_mechanical_c_#1-1794914742681.mp3",
+      "destination": "public/sfx/sfx_cash.mp3",
+      "sha256": "1f77c83846f7e456f89ac3fc76b55fee3aff300b34cba49a5d437342b25c5d9c"
+    }
+  ]
+}

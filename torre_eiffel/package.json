@@ -1,0 +1,28 @@
+{
+  "name": "torre-eiffel-short",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "render": "node scripts/render.mjs && node scripts/finalize.mjs",
+    "qa": "python qa_audit.py out/torre_eiffel_1080p.mp4",
+    "render:cli": "remotion render src/index.ts TorreEiffelShort out/.work/master_raw.mp4 --codec=h264 --crf=18 --audio-codec=aac --audio-bitrate=192k --pixel-format=yuv420p --gl=angle-egl"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.377",
+    "@remotion/three": "4.0.377",
+    "@react-three/fiber": "8.18.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.377",
+    "three": "0.170.0",
+    "@remotion/bundler": "4.0.377",
+    "@remotion/renderer": "4.0.377"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.24",
+    "@types/three": "0.170.0",
+    "typescript": "5.9.3"
+  }
+}

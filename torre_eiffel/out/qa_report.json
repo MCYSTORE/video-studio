@@ -1,0 +1,141 @@
+{
+  "file": "torre_eiffel_1080p.mp4",
+  "sha256": "a790901f55ae89614e0ec25b22d90796bcd7140093519427cd90530bcdabb224",
+  "created_utc": "2026-11-17T12:59:06.831330+00:00",
+  "passed": true,
+  "gates": {
+    "dimensions": true,
+    "fps": true,
+    "frame_count": true,
+    "no_identical_freezes": true,
+    "no_near_freezes": true,
+    "no_black_frames": true,
+    "no_unplanned_exposure_spikes": true,
+    "planned_three_frame_flashes_visible": true,
+    "no_unplanned_white_frames": true,
+    "true_peak_at_most_minus_1_dbtp": true,
+    "duration_within_one_frame_of_voice": true,
+    "av_duration_within_one_frame": true,
+    "captions_two_to_four_words": true,
+    "h264_aac": true,
+    "preview_h264_720x1280_30fps": true,
+    "preview_frame_count": true,
+    "preview_duration_matches_master": true,
+    "preview_uses_same_aac_packets": true
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30.0,
+    "decoded_frames": 1168,
+    "duration_seconds": 38.933333,
+    "voice_source_duration_seconds": 38.922438,
+    "duration_difference_ms": 10.895,
+    "audio_duration_seconds": 38.933
+  },
+  "frames": {
+    "identical_runs_over_three": [],
+    "max_identical_run": 1,
+    "near_freeze_runs_over_three": [],
+    "max_near_identical_run": 1,
+    "near_freeze_mad_threshold": 0.05,
+    "black_frames": [],
+    "unplanned_white_frames": [],
+    "unplanned_exposure_spikes": [],
+    "flash_detection": "Isolated luma spikes >22/255 outside planned flash windows. This is a heuristic; contact sheet is also manually reviewed.",
+    "allowed_flash_frames": [
+      177,
+      357,
+      537,
+      717,
+      897,
+      1077
+    ],
+    "planned_flash_measurements": [
+      {
+        "startFrame": 177,
+        "length": 3,
+        "luma_lift": [
+          49.805,
+          49.514,
+          49.228
+        ],
+        "visible": true
+      },
+      {
+        "startFrame": 357,
+        "length": 3,
+        "luma_lift": [
+          66.027,
+          65.6,
+          64.894
+        ],
+        "visible": true
+      },
+      {
+        "startFrame": 537,
+        "length": 3,
+        "luma_lift": [
+          53.702,
+          53.745,
+          54.104
+        ],
+        "visible": true
+      },
+      {
+        "startFrame": 717,
+        "length": 3,
+        "luma_lift": [
+          65.343,
+          65.027,
+          64.686
+        ],
+        "visible": true
+      },
+      {
+        "startFrame": 897,
+        "length": 3,
+        "luma_lift": [
+          59.812,
+          59.512,
+          59.234
+        ],
+        "visible": true
+      },
+      {
+        "startFrame": 1077,
+        "length": 3,
+        "luma_lift": [
+          56.488,
+          56.366,
+          56.26
+        ],
+        "visible": true
+      }
+    ]
+  },
+  "audio": {
+    "true_peak_dbtp": -4.1,
+    "integrated_lufs": -19.1,
+    "codec": "aac",
+    "bit_rate": "197605",
+    "meter": "FFmpeg ebur128 peak=true",
+    "log": "torre_eiffel_1080p.ebur128.log"
+  },
+  "timing": {
+    "alignment": "Whisper small word timestamps, manually corrected text; 30 fps quantization is not sample-accurate linguistic ground truth.",
+    "visual_anticipation_frames": 3,
+    "caption_count": 32,
+    "scene_count": 15
+  },
+  "preview": {
+    "file": "preview_720p.mp4",
+    "sha256": "5b6f6ae4630a8714c2dd62901c5b88818201b01f636b938ddec2999be95db3e1",
+    "bytes": 12761049,
+    "width": 720,
+    "height": 1280,
+    "fps": 30.0,
+    "duration_seconds": 38.933333,
+    "same_aac_packets_as_master": true
+  }
+}

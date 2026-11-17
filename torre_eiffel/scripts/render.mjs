@@ -1,0 +1,11 @@
+import {bundle} from '@remotion/bundler';
+import {selectComposition,renderMedia} from '@remotion/renderer';
+import {mkdirSync} from 'node:fs';
+import {resolve} from 'node:path';
+process.env.LP_NUM_THREADS ??= '2';
+mkdirSync('out/.work',{recursive:true});
+const serveUrl=await bundle({entryPoint:resolve('src/index.ts'),publicDir:resolve('public')});
+const chromiumOptions={gl:'angle-egl',disableWebSecurity:false};
+const composition=await selectComposition({serveUrl,id:'TorreEiffelShort',browserExecutable:'/usr/bin/chromium',chromiumOptions});
+let last=-1;
+await renderMedia({serveUrl,composition,codec:'h264',crf:18,audioCodec:'aac',audioBitrate:'192k',pixelFormat:'yuv420p',outputLocation:resolve('out/.work/master_raw.mp4'),browserExecutable:'/usr/bin/chromium',chromiumOptions,concurrency:2,imageFormat:'jpeg',jpegQuality:95,x264Preset:'medium',onProgress:({progress,renderedFrames,renderEstimatedTime})=>{let p=Math.floor(progress*100);if(p>=last+5){last=p;console.log(`Render ${p}% — ${renderedFrames}/${composition.durationInFrames} frames; ETA ${Math.round((renderEstimatedTime??0)/1000)}s`);}}});

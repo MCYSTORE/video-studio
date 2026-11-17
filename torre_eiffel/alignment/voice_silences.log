@@ -1,0 +1,63 @@
+[mp3 @ 0x55e84bfe8300] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'public/audio/voiceover.mp3':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Duration: 00:00:38.92, start: 0.000000, bitrate: 131 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, mono, fltp, 128 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 44100 Hz, mono, s16, 705 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[silencedetect @ 0x7fd854002000] silence_start: 0
+[silencedetect @ 0x7fd854002000] silence_end: 0.11034 | silence_duration: 0.11034
+[silencedetect @ 0x7fd854002000] silence_start: 0.413923
+[silencedetect @ 0x7fd854002000] silence_end: 0.634898 | silence_duration: 0.220975
+[silencedetect @ 0x7fd854002000] silence_start: 2.297914
+[silencedetect @ 0x7fd854002000] silence_end: 2.518571 | silence_duration: 0.220658
+[silencedetect @ 0x7fd854002000] silence_start: 2.777075
+[silencedetect @ 0x7fd854002000] silence_end: 2.873946 | silence_duration: 0.0968707
+[silencedetect @ 0x7fd854002000] silence_start: 4.591429
+[silencedetect @ 0x7fd854002000] silence_end: 4.758844 | silence_duration: 0.167415
+[silencedetect @ 0x7fd854002000] silence_start: 7.623107
+[silencedetect @ 0x7fd854002000] silence_end: 7.724739 | silence_duration: 0.101633
+[silencedetect @ 0x7fd854002000] silence_start: 8.044966
+[silencedetect @ 0x7fd854002000] silence_end: 8.405601 | silence_duration: 0.360635
+[silencedetect @ 0x7fd854002000] silence_start: 10.326077
+[silencedetect @ 0x7fd854002000] silence_end: 10.697959 | silence_duration: 0.371882
+[silencedetect @ 0x7fd854002000] silence_start: 12.445737
+[silencedetect @ 0x7fd854002000] silence_end: 12.784399 | silence_duration: 0.338662
+[silencedetect @ 0x7fd854002000] silence_start: 15.812358
+[silencedetect @ 0x7fd854002000] silence_end: 16.156576 | silence_duration: 0.344218
+[silencedetect @ 0x7fd854002000] silence_start: 17.954739
+[silencedetect @ 0x7fd854002000] silence_end: 18.032721 | silence_duration: 0.0779819
+[silencedetect @ 0x7fd854002000] silence_start: 18.388141
+[silencedetect @ 0x7fd854002000] silence_end: 18.529819 | silence_duration: 0.141678
+[silencedetect @ 0x7fd854002000] silence_start: 23.156621
+[silencedetect @ 0x7fd854002000] silence_end: 23.436213 | silence_duration: 0.279592
+[silencedetect @ 0x7fd854002000] silence_start: 24.949819
+[silencedetect @ 0x7fd854002000] silence_end: 25.202177 | silence_duration: 0.252358
+[silencedetect @ 0x7fd854002000] silence_start: 27.264966
+[silencedetect @ 0x7fd854002000] silence_end: 27.550658 | silence_duration: 0.285692
+[silencedetect @ 0x7fd854002000] silence_start: 28.31576
+[silencedetect @ 0x7fd854002000] silence_end: 28.580862 | silence_duration: 0.265102
+[silencedetect @ 0x7fd854002000] silence_start: 29.337188
+[silencedetect @ 0x7fd854002000] silence_end: 29.456281 | silence_duration: 0.119093
+[silencedetect @ 0x7fd854002000] silence_start: 30.306576
+[silencedetect @ 0x7fd854002000] silence_end: 30.543061 | silence_duration: 0.236485
+[silencedetect @ 0x7fd854002000] silence_start: 32.001973
+[silencedetect @ 0x7fd854002000] silence_end: 32.313628 | silence_duration: 0.311655
+[silencedetect @ 0x7fd854002000] silence_start: 35.230363
+[silencedetect @ 0x7fd854002000] silence_end: 35.535351 | silence_duration: 0.304989
+[silencedetect @ 0x7fd854002000] silence_start: 36.025102
+[silencedetect @ 0x7fd854002000] silence_end: 36.098685 | silence_duration: 0.0735828
+[silencedetect @ 0x7fd854002000] silence_start: 37.479274
+[silencedetect @ 0x7fd854002000] silence_end: 37.728118 | silence_duration: 0.248844
+[silencedetect @ 0x7fd854002000] silence_start: 38.683583
+[silencedetect @ 0x7fd854002000] silence_end: 38.922449 | silence_duration: 0.238866
+[out#0/null @ 0x55e84bfef0c0] video:0KiB audio:3352KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:38.92 bitrate=N/A speed= 376x

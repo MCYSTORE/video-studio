@@ -1,0 +1,5 @@
+[
+  {"index": 10, "text": "Víctor", "reason": "Spanish spelling of the given name."},
+  {"index": 26, "text": "Falsificó", "reason": "Correct Whisper orthographic error Falcificó."},
+  {"index": 96, "text": "Víctor", "reason": "Spanish spelling of the given name."}
+]

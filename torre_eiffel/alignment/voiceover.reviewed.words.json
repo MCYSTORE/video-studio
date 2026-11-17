@@ -1,0 +1,686 @@
+[
+  {
+    "word": "¡El",
+    "start": 0.5,
+    "end": 0.78,
+    "probability": 0.8914266526699066
+  },
+  {
+    "word": "hombre",
+    "start": 0.78,
+    "end": 1.0,
+    "probability": 0.9797241687774658
+  },
+  {
+    "word": "que",
+    "start": 1.0,
+    "end": 1.16,
+    "probability": 0.991870641708374
+  },
+  {
+    "word": "vendió",
+    "start": 1.16,
+    "end": 1.44,
+    "probability": 0.9940122067928314
+  },
+  {
+    "word": "la",
+    "start": 1.44,
+    "end": 1.56,
+    "probability": 0.9921078085899353
+  },
+  {
+    "word": "Torre",
+    "start": 1.56,
+    "end": 1.8,
+    "probability": 0.5054638348519802
+  },
+  {
+    "word": "Eiffel!",
+    "start": 1.8,
+    "end": 2.12,
+    "probability": 0.6462363993438581
+  },
+  {
+    "word": "En",
+    "start": 2.68,
+    "end": 3.24,
+    "probability": 0.8014955520629883
+  },
+  {
+    "word": "1925,",
+    "start": 3.24,
+    "end": 4.34,
+    "probability": 0.978417843580246
+  },
+  {
+    "word": "Víctor",
+    "start": 4.8,
+    "end": 4.98,
+    "probability": 0.7840033173561096
+  },
+  {
+    "word": "Lustig",
+    "start": 4.98,
+    "end": 5.46,
+    "probability": 0.9392628073692322
+  },
+  {
+    "word": "leyó",
+    "start": 5.46,
+    "end": 5.74,
+    "probability": 0.6466927627722422
+  },
+  {
+    "word": "que",
+    "start": 5.74,
+    "end": 5.86,
+    "probability": 0.9939954876899719
+  },
+  {
+    "word": "reparar",
+    "start": 5.86,
+    "end": 6.26,
+    "probability": 0.9899100661277771
+  },
+  {
+    "word": "la",
+    "start": 6.26,
+    "end": 6.38,
+    "probability": 0.9913697242736816
+  },
+  {
+    "word": "Torre",
+    "start": 6.38,
+    "end": 6.7,
+    "probability": 0.7734947204589844
+  },
+  {
+    "word": "costaba",
+    "start": 6.7,
+    "end": 7.08,
+    "probability": 0.992956668138504
+  },
+  {
+    "word": "una",
+    "start": 7.08,
+    "end": 7.32,
+    "probability": 0.9827402830123901
+  },
+  {
+    "word": "fortuna.",
+    "start": 7.32,
+    "end": 7.98,
+    "probability": 0.9922206699848175
+  },
+  {
+    "word": "Así",
+    "start": 8.16,
+    "end": 8.6,
+    "probability": 0.9749214053153992
+  },
+  {
+    "word": "que",
+    "start": 8.6,
+    "end": 8.78,
+    "probability": 0.9971613883972168
+  },
+  {
+    "word": "tuvo",
+    "start": 8.78,
+    "end": 8.96,
+    "probability": 0.9671041369438171
+  },
+  {
+    "word": "una",
+    "start": 8.96,
+    "end": 9.22,
+    "probability": 0.9982796907424927
+  },
+  {
+    "word": "idea",
+    "start": 9.22,
+    "end": 9.52,
+    "probability": 0.9906847476959229
+  },
+  {
+    "word": "absurda.",
+    "start": 9.52,
+    "end": 10.24,
+    "probability": 0.9948490858078003
+  },
+  {
+    "word": "Falsificó",
+    "start": 10.7,
+    "end": 11.26,
+    "probability": 0.7874573767185211
+  },
+  {
+    "word": "cartas",
+    "start": 11.26,
+    "end": 11.66,
+    "probability": 0.9561585187911987
+  },
+  {
+    "word": "del",
+    "start": 11.66,
+    "end": 11.82,
+    "probability": 0.927150547504425
+  },
+  {
+    "word": "gobierno",
+    "start": 11.82,
+    "end": 12.26,
+    "probability": 0.8829247355461121
+  },
+  {
+    "word": "y",
+    "start": 12.26,
+    "end": 12.86,
+    "probability": 0.5497236251831055
+  },
+  {
+    "word": "reunió",
+    "start": 12.86,
+    "end": 13.24,
+    "probability": 0.9958686530590057
+  },
+  {
+    "word": "a",
+    "start": 13.24,
+    "end": 13.38,
+    "probability": 0.9864263534545898
+  },
+  {
+    "word": "seis",
+    "start": 13.38,
+    "end": 13.58,
+    "probability": 0.8572322130203247
+  },
+  {
+    "word": "empresarios",
+    "start": 13.58,
+    "end": 14.14,
+    "probability": 0.9962331354618073
+  },
+  {
+    "word": "chatarreros",
+    "start": 14.14,
+    "end": 14.76,
+    "probability": 0.9290393193562826
+  },
+  {
+    "word": "en",
+    "start": 14.76,
+    "end": 14.94,
+    "probability": 0.9920629858970642
+  },
+  {
+    "word": "un",
+    "start": 14.94,
+    "end": 15.04,
+    "probability": 0.9956598877906799
+  },
+  {
+    "word": "hotel",
+    "start": 15.04,
+    "end": 15.28,
+    "probability": 0.9768461585044861
+  },
+  {
+    "word": "de",
+    "start": 15.28,
+    "end": 15.42,
+    "probability": 0.9879271388053894
+  },
+  {
+    "word": "lujo.",
+    "start": 15.42,
+    "end": 15.82,
+    "probability": 0.9935662150382996
+  },
+  {
+    "word": "Les",
+    "start": 16.1,
+    "end": 16.3,
+    "probability": 0.6665369868278503
+  },
+  {
+    "word": "dijo",
+    "start": 16.3,
+    "end": 16.52,
+    "probability": 0.996189534664154
+  },
+  {
+    "word": "que",
+    "start": 16.52,
+    "end": 16.66,
+    "probability": 0.9973899722099304
+  },
+  {
+    "word": "el",
+    "start": 16.66,
+    "end": 16.76,
+    "probability": 0.9896395206451416
+  },
+  {
+    "word": "gobierno",
+    "start": 16.76,
+    "end": 17.06,
+    "probability": 0.9712502956390381
+  },
+  {
+    "word": "iba",
+    "start": 17.06,
+    "end": 17.34,
+    "probability": 0.9942810535430908
+  },
+  {
+    "word": "a",
+    "start": 17.34,
+    "end": 17.64,
+    "probability": 0.3841197192668915
+  },
+  {
+    "word": "demoler",
+    "start": 17.64,
+    "end": 17.78,
+    "probability": 0.9000593423843384
+  },
+  {
+    "word": "la",
+    "start": 17.78,
+    "end": 17.94,
+    "probability": 0.9945937991142273
+  },
+  {
+    "word": "Torre",
+    "start": 17.94,
+    "end": 18.34,
+    "probability": 0.8332531452178955
+  },
+  {
+    "word": "y",
+    "start": 18.34,
+    "end": 19.16,
+    "probability": 0.49386492371559143
+  },
+  {
+    "word": "que",
+    "start": 19.16,
+    "end": 19.32,
+    "probability": 0.9948351383209229
+  },
+  {
+    "word": "él",
+    "start": 19.32,
+    "end": 19.52,
+    "probability": 0.9794126749038696
+  },
+  {
+    "word": "tenía",
+    "start": 19.52,
+    "end": 19.8,
+    "probability": 0.9766178131103516
+  },
+  {
+    "word": "el",
+    "start": 19.8,
+    "end": 19.94,
+    "probability": 0.9786329865455627
+  },
+  {
+    "word": "contrato",
+    "start": 19.94,
+    "end": 20.32,
+    "probability": 0.9925809800624847
+  },
+  {
+    "word": "secreto",
+    "start": 20.32,
+    "end": 20.76,
+    "probability": 0.99956414103508
+  },
+  {
+    "word": "para",
+    "start": 20.76,
+    "end": 20.94,
+    "probability": 0.9939576387405396
+  },
+  {
+    "word": "venderles",
+    "start": 20.94,
+    "end": 21.4,
+    "probability": 0.9919972121715546
+  },
+  {
+    "word": "las",
+    "start": 21.4,
+    "end": 21.56,
+    "probability": 0.939794659614563
+  },
+  {
+    "word": "7.000",
+    "start": 21.56,
+    "end": 22.18,
+    "probability": 0.8743036985397339
+  },
+  {
+    "word": "toneladas",
+    "start": 22.18,
+    "end": 22.62,
+    "probability": 0.9823402762413025
+  },
+  {
+    "word": "de",
+    "start": 22.62,
+    "end": 22.8,
+    "probability": 0.9979828596115112
+  },
+  {
+    "word": "hierro.",
+    "start": 22.8,
+    "end": 23.16,
+    "probability": 0.9855560958385468
+  },
+  {
+    "word": "Un",
+    "start": 23.4,
+    "end": 23.56,
+    "probability": 0.985806405544281
+  },
+  {
+    "word": "empresario",
+    "start": 23.56,
+    "end": 24.02,
+    "probability": 0.9985747635364532
+  },
+  {
+    "word": "cayó",
+    "start": 24.02,
+    "end": 24.32,
+    "probability": 0.9955422282218933
+  },
+  {
+    "word": "en",
+    "start": 24.32,
+    "end": 24.4,
+    "probability": 0.997156023979187
+  },
+  {
+    "word": "la",
+    "start": 24.4,
+    "end": 24.5,
+    "probability": 0.9976576566696167
+  },
+  {
+    "word": "trampa",
+    "start": 24.5,
+    "end": 24.86,
+    "probability": 0.9784315228462219
+  },
+  {
+    "word": "y",
+    "start": 24.86,
+    "end": 25.28,
+    "probability": 0.9800845384597778
+  },
+  {
+    "word": "le",
+    "start": 25.28,
+    "end": 25.36,
+    "probability": 0.9938119649887085
+  },
+  {
+    "word": "pagó",
+    "start": 25.36,
+    "end": 25.62,
+    "probability": 0.9859936833381653
+  },
+  {
+    "word": "una",
+    "start": 25.62,
+    "end": 25.76,
+    "probability": 0.9968594312667847
+  },
+  {
+    "word": "maleta",
+    "start": 25.76,
+    "end": 26.14,
+    "probability": 0.9670282900333405
+  },
+  {
+    "word": "llena",
+    "start": 26.14,
+    "end": 26.6,
+    "probability": 0.9922374486923218
+  },
+  {
+    "word": "de",
+    "start": 26.6,
+    "end": 26.72,
+    "probability": 0.9991181492805481
+  },
+  {
+    "word": "billetes.",
+    "start": 26.72,
+    "end": 27.14,
+    "probability": 0.9903910160064697
+  },
+  {
+    "word": "Lo",
+    "start": 27.14,
+    "end": 27.68,
+    "probability": 0.789909839630127
+  },
+  {
+    "word": "más",
+    "start": 27.68,
+    "end": 27.92,
+    "probability": 0.9338955283164978
+  },
+  {
+    "word": "loco,",
+    "start": 27.92,
+    "end": 28.26,
+    "probability": 0.9949590861797333
+  },
+  {
+    "word": "la",
+    "start": 28.56,
+    "end": 28.68,
+    "probability": 0.9895753860473633
+  },
+  {
+    "word": "víctima",
+    "start": 28.68,
+    "end": 29.04,
+    "probability": 0.9890413284301758
+  },
+  {
+    "word": "tuvo",
+    "start": 29.04,
+    "end": 29.24,
+    "probability": 0.9961186647415161
+  },
+  {
+    "word": "tanta",
+    "start": 29.24,
+    "end": 29.62,
+    "probability": 0.9975624084472656
+  },
+  {
+    "word": "vergüenza",
+    "start": 29.62,
+    "end": 30.22,
+    "probability": 0.9863591194152832
+  },
+  {
+    "word": "que",
+    "start": 30.22,
+    "end": 30.6,
+    "probability": 0.8939666748046875
+  },
+  {
+    "word": "jamás",
+    "start": 30.6,
+    "end": 31.12,
+    "probability": 0.9757120907306671
+  },
+  {
+    "word": "fue",
+    "start": 31.12,
+    "end": 31.28,
+    "probability": 0.9635632038116455
+  },
+  {
+    "word": "a",
+    "start": 31.28,
+    "end": 31.38,
+    "probability": 0.9811322093009949
+  },
+  {
+    "word": "la",
+    "start": 31.38,
+    "end": 31.44,
+    "probability": 0.998751163482666
+  },
+  {
+    "word": "policía.",
+    "start": 31.44,
+    "end": 32.02,
+    "probability": 0.9757150709629059
+  },
+  {
+    "word": "Así",
+    "start": 32.26,
+    "end": 32.46,
+    "probability": 0.9682576060295105
+  },
+  {
+    "word": "que",
+    "start": 32.46,
+    "end": 32.62,
+    "probability": 0.9899160265922546
+  },
+  {
+    "word": "Víctor",
+    "start": 32.62,
+    "end": 32.82,
+    "probability": 0.24133911728858948
+  },
+  {
+    "word": "volvió",
+    "start": 32.82,
+    "end": 33.34,
+    "probability": 0.9941634734471639
+  },
+  {
+    "word": "a",
+    "start": 33.34,
+    "end": 33.38,
+    "probability": 0.9922637939453125
+  },
+  {
+    "word": "París",
+    "start": 33.38,
+    "end": 33.72,
+    "probability": 0.9310676455497742
+  },
+  {
+    "word": "y",
+    "start": 33.72,
+    "end": 33.88,
+    "probability": 0.9769732356071472
+  },
+  {
+    "word": "la",
+    "start": 33.88,
+    "end": 33.98,
+    "probability": 0.9855726361274719
+  },
+  {
+    "word": "vendió",
+    "start": 33.98,
+    "end": 34.34,
+    "probability": 0.9908795952796936
+  },
+  {
+    "word": "otra",
+    "start": 34.34,
+    "end": 34.74,
+    "probability": 0.9425756931304932
+  },
+  {
+    "word": "vez.",
+    "start": 34.74,
+    "end": 35.1,
+    "probability": 0.9976727366447449
+  },
+  {
+    "word": "Comenta",
+    "start": 35.48,
+    "end": 35.8,
+    "probability": 0.8591832220554352
+  },
+  {
+    "word": "si",
+    "start": 35.8,
+    "end": 36.0,
+    "probability": 0.984620213508606
+  },
+  {
+    "word": "tú",
+    "start": 36.0,
+    "end": 36.18,
+    "probability": 0.8700272440910339
+  },
+  {
+    "word": "habrías",
+    "start": 36.18,
+    "end": 36.52,
+    "probability": 0.987942099571228
+  },
+  {
+    "word": "caído",
+    "start": 36.52,
+    "end": 36.82,
+    "probability": 0.9859996438026428
+  },
+  {
+    "word": "en",
+    "start": 36.82,
+    "end": 36.94,
+    "probability": 0.9940536618232727
+  },
+  {
+    "word": "ese",
+    "start": 36.94,
+    "end": 37.06,
+    "probability": 0.9643623232841492
+  },
+  {
+    "word": "truco,",
+    "start": 37.06,
+    "end": 37.44,
+    "probability": 0.995119313398997
+  },
+  {
+    "word": "porque",
+    "start": 37.68,
+    "end": 37.92,
+    "probability": 0.8961162567138672
+  },
+  {
+    "word": "este",
+    "start": 37.92,
+    "end": 38.2,
+    "probability": 0.9303070306777954
+  },
+  {
+    "word": "hombre…",
+    "start": 38.2,
+    "end": 38.86,
+    "probability": 0.7458781003952026
+  }
+]
