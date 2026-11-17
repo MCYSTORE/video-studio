@@ -11,6 +11,8 @@ Composición **TorreEiffelShort**: Remotion + Three.js, vertical 1080 × 1920, 3
 
 Verificación final: **PASS**, 1.168 fotogramas decodificados, 38,933333 s de video y 38,933 s de audio; pico verdadero −4,1 dBTP y loudness −19,1 LUFS. La preview conserva el mismo audio AAC. El nuevo master animado conserva además los paquetes AAC del master anterior exactamente (SHA-256 ADTS `7bb9da55f77ca67b000281d1ef9d7729ea2907bce91f827e3a902e3acef07b84`). La voz original se mantiene completa, según la preferencia confirmada.
 
+Para el proceso completo y su adaptación a otros episodios, consultar [METODOLOGIA_EDICION.md](METODOLOGIA_EDICION.md).
+
 ## Reproducir
 
 Requiere Node 22+, Python 3.12, FFmpeg/ffprobe y Chromium. Las dependencias JavaScript están fijadas en `package-lock.json`; `requirements.lock.txt` registra el entorno de transcripción y QA.
@@ -21,9 +23,11 @@ python -m venv .venv
 .venv/bin/pip install -r requirements.lock.txt
 .venv/bin/python scripts/ingest.py
 .venv/bin/python scripts/prepare_layers.py
+.venv/bin/python scripts/separate_hero.py
 # Solo para repetir el reconocimiento (descarga Whisper small):
 .venv/bin/python scripts/transcribe.py
 .venv/bin/python scripts/build_timeline.py
+.venv/bin/python scripts/voice_envelope.py
 npm run typecheck
 npm run render
 .venv/bin/python qa_audit.py out/torre_eiffel_1080p.mp4
