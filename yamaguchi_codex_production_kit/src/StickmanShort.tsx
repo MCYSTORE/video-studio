@@ -159,7 +159,6 @@ export const StickmanShort: React.FC = () => {
         <Img src={staticFile(SCENES[0].image)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.02)' }} />
       </AbsoluteFill>}
       {flashOpacity > 0 && <AbsoluteFill style={{ backgroundColor: '#FFF', opacity: flashOpacity }} />}
-      <KineticCaptions />
     </AbsoluteFill>
   );
 };
