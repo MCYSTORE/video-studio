@@ -1,7 +1,7 @@
 {
   "file": "torre_eiffel_1080p.mp4",
-  "sha256": "a790901f55ae89614e0ec25b22d90796bcd7140093519427cd90530bcdabb224",
-  "created_utc": "2026-11-17T12:59:06.831330+00:00",
+  "sha256": "d70d4a9abf43b8df2ed50b751106c3a241425c6938384df99b0e78b1ad425549",
+  "created_utc": "2026-11-17T13:44:05.884183+00:00",
   "passed": true,
   "gates": {
     "dimensions": true,
@@ -56,9 +56,9 @@
         "startFrame": 177,
         "length": 3,
         "luma_lift": [
-          49.805,
-          49.514,
-          49.228
+          48.283,
+          47.883,
+          47.269
         ],
         "visible": true
       },
@@ -66,9 +66,9 @@
         "startFrame": 357,
         "length": 3,
         "luma_lift": [
-          66.027,
-          65.6,
-          64.894
+          64.199,
+          63.704,
+          62.89
         ],
         "visible": true
       },
@@ -76,9 +76,9 @@
         "startFrame": 537,
         "length": 3,
         "luma_lift": [
-          53.702,
-          53.745,
-          54.104
+          52.345,
+          52.246,
+          52.442
         ],
         "visible": true
       },
@@ -86,9 +86,9 @@
         "startFrame": 717,
         "length": 3,
         "luma_lift": [
-          65.343,
-          65.027,
-          64.686
+          63.451,
+          63.048,
+          62.456
         ],
         "visible": true
       },
@@ -96,9 +96,9 @@
         "startFrame": 897,
         "length": 3,
         "luma_lift": [
-          59.812,
-          59.512,
-          59.234
+          58.981,
+          58.693,
+          58.446
         ],
         "visible": true
       },
@@ -106,9 +106,9 @@
         "startFrame": 1077,
         "length": 3,
         "luma_lift": [
-          56.488,
-          56.366,
-          56.26
+          52.136,
+          52.063,
+          51.522
         ],
         "visible": true
       }
@@ -130,8 +130,8 @@
   },
   "preview": {
     "file": "preview_720p.mp4",
-    "sha256": "5b6f6ae4630a8714c2dd62901c5b88818201b01f636b938ddec2999be95db3e1",
-    "bytes": 12761049,
+    "sha256": "3102d19c7119d76884e77e522607b7cb0ee683d7c28e098a5290c9e19fc745ef",
+    "bytes": 11402251,
     "width": 720,
     "height": 1280,
     "fps": 30.0,

@@ -4,6 +4,8 @@ import {ThreeCanvas} from '@remotion/three';
 import {useLoader, useThree} from '@react-three/fiber';
 import * as THREE from 'three';
 import timeline from '../alignment/timeline.json';
+import envelope from '../alignment/voice_envelope.json';
+import heroManifest from '../public/layers/hero_manifest.json';
 import './style.css';
 
 export const FPS = 30;
@@ -16,9 +18,21 @@ function World({sceneIndex,local,progress,punch,whip,loopBlend}:{sceneIndex:numb
   const frame=useCurrentFrame();
   const {camera}=useThree();
   const id=String(sceneIndex+1).padStart(2,'0');
-  const [front,back,alpha,opening]=useLoader(THREE.TextureLoader,[staticFile(`scenes/${id}.jpg`),staticFile(`layers/${id}_back.jpg`),staticFile('layers/focus.png'),staticFile('scenes/01.jpg')]);
-  useMemo(()=>{[front,back,opening].forEach(t=>{t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;});},[front,back,opening]);
+  const [front,back,alpha,opening,hero,cleanBg]=useLoader(THREE.TextureLoader,[staticFile(`scenes/${id}.jpg`),staticFile(`layers/${id}_back.jpg`),staticFile('layers/focus.png'),staticFile('scenes/01.jpg'),staticFile(`layers/hero_${id}.png`),staticFile(`layers/bg_${id}.jpg`)]);
+  useMemo(()=>{[front,back,opening,hero,cleanBg].forEach(t=>{t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;});},[front,back,opening,hero,cleanBg]);
   const direction=sceneIndex%2 ? 1:-1;
+  const voice=envelope.values[Math.min(frame,envelope.values.length-1)] ?? 0;
+  const meta=heroManifest[sceneIndex];
+  const [x0,y0,x1,y1]=meta.bbox;const [imageW,imageH]=meta.source_size;
+  const heroW=3.96*(x1-x0)/imageW,heroH=7.04*(y1-y0)/imageH;
+  const heroX=3.96*((x0+x1)/2/imageW-.5),heroY=7.04*(.5-(y0+y1)/2/imageH);
+  const beats=[177,447,1017];
+  const rebound=beats.reduce((v,b)=>Math.max(v,frame>=b&&frame<b+21?Math.abs(1-spring({frame:frame-b,fps:FPS,config:{stiffness:170,damping:9,mass:.55}})):0),0);
+  const breath=Math.sin(frame*.115)*.012;
+  const talk=Math.sin(frame*.38)*voice*.026;
+  const heroScaleX=1+breath+voice*.022+rebound*.10;
+  const heroScaleY=1-breath+voice*.045-rebound*.075;
+  const billPositions=useMemo(()=>Array.from({length:15},(_,i)=>({x:((i*.754877)%1-.5)*3.4,y:((i*.569841)%1)*7,depth:.5+(i%3)*.14})),[]);
   const shakeBeats=timeline.sfx.map(s=>s.frame);
   const impulse=shakeBeats.reduce((v,f)=>Math.max(v,frame>=f&&frame<f+22?Math.abs(1-spring({frame:frame-f,fps:FPS,config:{damping:11,stiffness:190,mass:0.6}})):0),0);
   const arc=Math.sin(progress*Math.PI)*direction;
@@ -35,17 +49,35 @@ function World({sceneIndex,local,progress,punch,whip,loopBlend}:{sceneIndex:numb
     <ambientLight intensity={2.0}/>
     <directionalLight position={[-3,5,6]} intensity={0.8} color={palette[sceneIndex]} castShadow shadow-mapSize={[512,512]} shadow-bias={-0.001}/>
     <directionalLight position={[4,-1,3]} intensity={0.22} color="#b9d9ff"/>
-    <group rotation={[0,arc*0.004,Math.sin(t*0.4)*0.0015*(1-loopBlend)]}>
+    <group rotation={[0,arc*0.004,Math.sin(t*0.4)*0.0015*(1-loopBlend)+(sceneIndex===10?Math.sin(frame*2.4)*.003:0)]}>
       {/* Background at real Z=-1.5; scaled to share the framing of the subject. */}
       <mesh position={[0,0,-1.5]} receiveShadow>
         <planeGeometry args={[5.04,8.96]}/>
         <meshLambertMaterial map={back} toneMapped={false} color="#eeeeee"/>
       </mesh>
-      {/* Soft peripheral alpha exposes the blurred spatial background. */}
-      <mesh position={[0,0,0]} castShadow>
+      {/* Inpainted plate and independently animated transparent protagonist. */}
+      <mesh position={[0,0,0]} receiveShadow>
         <planeGeometry args={[3.96,7.04]}/>
-        <meshLambertMaterial map={front} alphaMap={alpha} transparent toneMapped={false} color="#eeeeee"/>
+        <meshLambertMaterial map={cleanBg} toneMapped={false} color="#eeeeee"/>
       </mesh>
+      {sceneIndex===2&&Array.from({length:9},(_,i)=>{const a=i*Math.PI*2/9+t*.65;return <mesh key={`ray${i}`} position={[Math.cos(a)*.36,1.73+Math.sin(a)*.36,.09]} rotation={[0,0,a]}><planeGeometry args={[.045,.45]}/><meshBasicMaterial color="#fff27a" transparent opacity={.25+.18*Math.sin(t*4+i)} depthWrite={false}/></mesh>})}
+      <group position={[heroX,heroY+breath*.7+voice*.028+rebound*.22+(sceneIndex===10?Math.sin(frame*2.4)*.018:0),.27]} rotation={[0,0,talk+Math.sin(frame*.04)*.008+rebound*.09]} scale={[heroScaleX,heroScaleY,1]}>
+        <mesh castShadow><planeGeometry args={[heroW,heroH]}/><meshBasicMaterial map={hero} transparent alphaTest={.015} toneMapped={false} depthWrite={false}/></mesh>
+      </group>
+      {(sceneIndex===7||sceneIndex===11)&&billPositions.map((p,i)=>{
+        const fall=((p.y-t*(.75+(i%5)*.08))%7+7)%7-3.5;
+        return <mesh key={`bill${i}`} position={[p.x,fall,p.depth]} rotation={[.3*Math.sin(t+i),t*(1.8+i*.13),.45*Math.sin(t*2+i)]}>
+          <planeGeometry args={[.18,.085]}/><meshBasicMaterial color={i%3===0?'#b6e96b':'#58b978'} side={THREE.DoubleSide} transparent opacity={.72} depthWrite={false}/>
+        </mesh>})}
+      {sceneIndex===8&&Array.from({length:11},(_,i)=>{
+        const rise=((t*.55+i*.61)%4.2),spread=Math.sin(t*1.4+i)*.11;
+        return <mesh key={`smoke${i}`} position={[.32+spread+rise*.08,-1.08+rise,.65]} scale={[1+rise*.6,1+rise*.6,1]}>
+          <circleGeometry args={[.075+(i%3)*.027,12]}/><meshBasicMaterial color="#f2f5ec" transparent opacity={Math.max(0,.31-rise*.065)} depthWrite={false}/>
+        </mesh>})}
+      {sceneIndex===10&&Array.from({length:10},(_,i)=>{
+        const sweep=((t*2.3+i*.51)%4.5)-2.25;
+        return <mesh key={`speed${i}`} position={[sweep,((i*.618)%1-.5)*5,.64]} rotation={[0,0,-.17]}><planeGeometry args={[.32+(i%3)*.14,.012]}/><meshBasicMaterial color="#fff3c4" transparent opacity={.30} depthWrite={false}/></mesh>
+      })}
       {loopBlend>0&&<mesh position={[0,0,0.002]}>
         <planeGeometry args={[3.96,7.04]}/>
         <meshLambertMaterial map={opening} transparent opacity={loopBlend} toneMapped={false} color="#eeeeee"/>

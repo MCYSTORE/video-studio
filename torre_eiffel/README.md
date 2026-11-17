@@ -9,7 +9,7 @@ Composición **TorreEiffelShort**: Remotion + Three.js, vertical 1080 × 1920, 3
 - `out/qa_report.json` y `out/qa_report.md`: auditoría del archivo final decodificado.
 - `out/ingest_contact_sheet.jpg`: las 16 imágenes originales para inspección.
 
-Verificación final: **PASS**, 1.168 fotogramas decodificados, 38,933333 s de video y 38,933 s de audio; pico verdadero −4,1 dBTP y loudness −19,1 LUFS. La preview conserva el mismo audio AAC. La voz original se mantiene completa, según la preferencia confirmada.
+Verificación final: **PASS**, 1.168 fotogramas decodificados, 38,933333 s de video y 38,933 s de audio; pico verdadero −4,1 dBTP y loudness −19,1 LUFS. La preview conserva el mismo audio AAC. El nuevo master animado conserva además los paquetes AAC del master anterior exactamente (SHA-256 ADTS `7bb9da55f77ca67b000281d1ef9d7729ea2907bce91f827e3a902e3acef07b84`). La voz original se mantiene completa, según la preferencia confirmada.
 
 ## Reproducir
 
@@ -31,11 +31,13 @@ npm run render
 
 También puede renderizarse con `npm run render:cli` y finalizarse con `node scripts/finalize.mjs`. `npm run studio` abre la composición. El navegador usa `/usr/bin/chromium` y `angle-egl` (Mesa sobre EGL) para renderizado WebGL por CPU en esta máquina. `LP_NUM_THREADS=2` ajusta el rasterizador a los dos núcleos disponibles. MSAA está desactivado: los planos usan imágenes ya suavizadas y el texto conserva su renderizado nativo. Los comandos que abren Chromium necesitan permitir sus sockets locales en el aislamiento del ejecutor.
 
-## Activos y profundidad
+## Activos, separación y animación
 
-`alignment/asset_manifest.json` registra cada original y su destino. Se seleccionan 15 escenas en el orden solicitado, incluyendo la toma apuntando a cámara. No se encontró ninguna hoja de referencia sobre fondo beige. Las imágenes `standing_by_Eiffel_Tower` y `standing_near_iron_tower` son variantes de cierre; se seleccionó la primera y se conserva la segunda original en la raíz del repositorio. El cierre suministrado incluye al personaje delante de París; se utiliza tal como fue entregado.
+`alignment/asset_manifest.json` registra los originales; se usan 15 escenas, incluida la toma apuntando a cámara. `scripts/separate_hero.py` aplica rembg U2Net en una región revisada del protagonista por escena, limpia componentes con OpenCV y guarda `public/layers/hero_XX.png` con alfa. El área vacía se rellena mediante `cv2.inpaint` en `public/layers/bg_XX.jpg`. La geometría de cada recorte figura en `hero_manifest.json`. La segmentación de ilustraciones complejas es aproximada: algunas partes pequeñas o superpuestas al mobiliario permanecen en el fondo. Los recortes se mueven con amplitudes contenidas para que esos límites sean poco visibles.
 
-Las ilustraciones son imágenes aplanadas. La composición crea un fondo suavizado en Z = −1,5, el plano fotográfico principal en Z = 0 con transparencia periférica, iluminación y sombra proyectada, y partículas animadas en Z = +1,2. Es una puesta en escena 2.5D de planos reales; no hay geometría reconstruida del personaje ni fondo oculto inventado. OpenCV genera la periferia suave y el canal alfa. Dolly, arco de cámara, whip y temblor amortiguado son funciones deterministas del fotograma: no se usa un reloj WebGL independiente.
+La composición mantiene un fondo suavizado en Z = −1,5, un plato rellenado en Z = 0 y el personaje transparente en Z = +0,27. Las partículas y elementos de escena ocupan planos más cercanos. `scripts/voice_envelope.py` decodifica la voz original a 48 kHz y calcula RMS por cada fotograma de 1.600 muestras; el resultado se suaviza y normaliza en `alignment/voice_envelope.json`. La amplitud gobierna la inclinación al hablar y el squash/stretch; la respiración es sinusoidal. Un resorte anima al protagonista en los golpes cercanos a 0:06, 0:15 y 0:34.
+
+La escena 03 mueve rayos detrás de la bombilla; 08 y 12 tienen billetes 3D que caen y giran; 09 anima columnas de humo en el tren; 11 añade líneas de velocidad y vibración al conductor. Las posiciones son funciones deterministas del fotograma para que el render sea reproducible.
 
 ## Sincronización y bucle
 

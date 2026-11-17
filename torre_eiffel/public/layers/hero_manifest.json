@@ -1,0 +1,212 @@
+[
+  {
+    "scene": 1,
+    "bbox": [
+      43,
+      172,
+      555,
+      1214
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.2606
+  },
+  {
+    "scene": 2,
+    "bbox": [
+      71,
+      332,
+      597,
+      1177
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.1639
+  },
+  {
+    "scene": 3,
+    "bbox": [
+      128,
+      330,
+      641,
+      1258
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.244
+  },
+  {
+    "scene": 4,
+    "bbox": [
+      209,
+      284,
+      712,
+      756
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.1379
+  },
+  {
+    "scene": 5,
+    "bbox": [
+      388,
+      343,
+      628,
+      918
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.076
+  },
+  {
+    "scene": 6,
+    "bbox": [
+      299,
+      343,
+      698,
+      1114
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.1073
+  },
+  {
+    "scene": 7,
+    "bbox": [
+      96,
+      149,
+      651,
+      1209
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.3389
+  },
+  {
+    "scene": 8,
+    "bbox": [
+      25,
+      247,
+      413,
+      1178
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.1395
+  },
+  {
+    "scene": 9,
+    "bbox": [
+      177,
+      441,
+      519,
+      1068
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.069
+  },
+  {
+    "scene": 10,
+    "bbox": [
+      199,
+      505,
+      577,
+      963
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.0859
+  },
+  {
+    "scene": 11,
+    "bbox": [
+      396,
+      917,
+      549,
+      1142
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.0179
+  },
+  {
+    "scene": 12,
+    "bbox": [
+      239,
+      260,
+      579,
+      748
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.0935
+  },
+  {
+    "scene": 13,
+    "bbox": [
+      48,
+      56,
+      738,
+      1362
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.5607
+  },
+  {
+    "scene": 14,
+    "bbox": [
+      136,
+      151,
+      672,
+      1102
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.2627
+  },
+  {
+    "scene": 15,
+    "bbox": [
+      190,
+      164,
+      638,
+      955
+    ],
+    "source_size": [
+      768,
+      1376
+    ],
+    "hero_area_fraction": 0.1699
+  }
+]
